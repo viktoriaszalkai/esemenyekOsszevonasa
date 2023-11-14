@@ -8,7 +8,7 @@ public class osszevonasok extends javax.swing.JFrame {
     
     public osszevonasok() {
         osszeg = 0;
-        jTextField1.setText(osszeg + "Ft");
+        frissites();
         initComponents();
     }
     @SuppressWarnings("unchecked")
@@ -94,8 +94,12 @@ public class osszevonasok extends javax.swing.JFrame {
         }else{
             osszeg -= 200;
         }
-        jTextField1.setText(osszeg + "Ft");
+        frissites();
     }//GEN-LAST:event_osszesito
+
+    private void frissites() {
+        jTextField1.setText(osszeg + "Ft");
+    }
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
