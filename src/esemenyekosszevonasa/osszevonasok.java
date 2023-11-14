@@ -7,6 +7,8 @@ public class osszevonasok extends javax.swing.JFrame {
     int osszeg;
     
     public osszevonasok() {
+        osszeg = 0;
+        jTextField1.setText(osszeg + "Ft");
         initComponents();
     }
     @SuppressWarnings("unchecked")
